@@ -31,7 +31,7 @@ image_name=aosucas499/starboard:0.1
 #    mkdir $CONFIG_FOLDER
 #fi
 
-docker stop testing starboard && docker rm testing starboard
+sudo docker stop testing starboard && docker rm testing starboard
 
 
 # Lanzamos el contenedor creándolo si no existe.
