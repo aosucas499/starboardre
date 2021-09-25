@@ -96,6 +96,7 @@ if [[ $DESKTOP = ubuntu:GNOME || $DESKTOP = ubuntu || $DESKTOP = GNOME || $DESKT
 		sleep 4
 		sudo apt-get install git -y
 		sudo apt-get install dkms -y
+		cd /home/$USER
 		git clone https://github.com/aosucas499/starboard-lsadrv
 		cd starboard-lsadrv
 		chmod +x install
@@ -113,6 +114,7 @@ if [[ $DESKTOP = ubuntu:GNOME || $DESKTOP = ubuntu || $DESKTOP = GNOME || $DESKT
 		sleep 4
 		sudo apt-get install git -y
 		sudo apt-get install dkms -y
+		cd /home/$USER
 		git clone https://github.com/aosucas499/starboard-lsadrv
 		cd starboard-lsadrv
 		chmod +x install
@@ -174,6 +176,7 @@ if [[ $DESKTOP = ubuntu:GNOME || $DESKTOP = ubuntu || $DESKTOP = GNOME || $DESKT
 	echo ""
 	echo -e "${AZUL}Settings up the app to boot at init...${NORMAL}"
 	echo ""
+	cd /home/$USER/starboard-lsadrv
 	sudo cp starboardre /usr/bin
     	sudo chmod +x /usr/bin/starboardre
     	sudo chown root:root zz-starboardre
