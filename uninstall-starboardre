@@ -1,0 +1,35 @@
+#! /bin/bash
+
+# Borrado de archivos anteriores de starboardre o lliurex-starboard
+#
+echo ""
+echo -e "${ROJO}Borrando antiguos archivos de starboardre${NORMAL}"
+echo ""
+echo -e "${ROJO}Deleting old files from starboardre${NORMAL}"
+echo ""
+sleep 3
+##
+#
+sudo rm /etc/xdg/autostart/starboard.desktop
+
+sudo rm /usr/share/applications/starboard.desktop
+
+sudo rm /usr/bin/starboard
+
+sudo rm /etc/sudoers.d/zz-starboardre
+
+sudo docker stop starboard testing
+
+sudo docker rm starboard testing
+
+sudo docker rmi aosucas499/starboard:0.1
+
+sudo docker rmi aosucas499/starboard
+
+sudo dkms remove starboard-lsadrv/1.0 --all
+
+sudo rm /etc/apt/sources.list.d/docker.list
+
+#sudo delgroup docker
+
+#sudo apt purge --remove docker-ce docker-ce-cli containerd.io -y
