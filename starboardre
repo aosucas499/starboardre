@@ -31,7 +31,7 @@ image_name=aosucas499/starboard:0.1
 #    mkdir $CONFIG_FOLDER
 #fi
 
-sudo docker stop testing starboard && sudo docker rm testing starboard
+sudo docker stop testing starboard && sudo docker rm testing 
 
 # Cargamos el módulo táctil de la pizarra
 modprobe lsadrv
