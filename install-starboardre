@@ -187,7 +187,7 @@ if [[ $DESKTOP = ubuntu:GNOME || $DESKTOP = ubuntu || $DESKTOP = GNOME || $DESKT
 	
 # Añadir iconos originales al sistema
 #
-	sudo cp  hitachi-StarBoardSoftware.svg /usr/share/icons
+	sudo cp  icons/hitachi-StarBoardSoftware.svg /usr/share/icons
 	
 # Notificaciones al terminar
 #
