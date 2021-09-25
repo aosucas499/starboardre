@@ -38,6 +38,7 @@ modprobe lsadrv
 
 # Lanzamos el contenedor creándolo si no existe.
 
+sleep 5
 if docker ps -a --format '{{.Names}}' | grep -Eq "^${container_name}\$"; then
    	docker start ${container_name}
 
