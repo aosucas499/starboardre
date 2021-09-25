@@ -99,7 +99,7 @@ if [[ $DESKTOP = ubuntu:GNOME || $DESKTOP = ubuntu || $DESKTOP = GNOME || $DESKT
 		git clone https://github.com/aosucas499/starboard-lsadrv
 		cd starboard-lsadrv
 		chmod +x install
-		sudo ./install
+		./install
 		cd ..
 		sudo rm -r starboard-lsadrv
 	
@@ -116,7 +116,7 @@ if [[ $DESKTOP = ubuntu:GNOME || $DESKTOP = ubuntu || $DESKTOP = GNOME || $DESKT
 		git clone https://github.com/aosucas499/starboard-lsadrv
 		cd starboard-lsadrv
 		chmod +x install
-		sudo ./install
+		./install
 		cd ..
 		sudo rm -r starboard-lsadrv
 	
