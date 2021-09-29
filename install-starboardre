@@ -104,6 +104,7 @@ if [[ $DESKTOP = ubuntu:GNOME || $DESKTOP = ubuntu || $DESKTOP = GNOME || $DESKT
 		#cd ..
 		#sudo rm -r starboard-lsadrv
 		git clone https://github.com/aosucas499/starboard
+		cd starboard
 		sudo dpkg -i debs/starboard-modules_0.2.1_all.deb
 		cd ..
 		sudo rm -r starboard
@@ -126,6 +127,7 @@ if [[ $DESKTOP = ubuntu:GNOME || $DESKTOP = ubuntu || $DESKTOP = GNOME || $DESKT
 		#cd ..
 		#sudo rm -r starboard-lsadrv
 		git clone https://github.com/aosucas499/starboard
+		cd starboard
 		sudo dpkg -i debs/starboard-modules_0.2.1_all.deb
 		cd ..
 		sudo rm -r starboard
