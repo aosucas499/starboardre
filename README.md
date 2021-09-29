@@ -38,7 +38,7 @@ If this project helps you, you can give me a cup of coffee .
 )
 
 
-<b>Thanks to</b> [Lliurex Team](https://portal.edu.gva.es/lliurex/va/) and [mijuanlo](https://github.com/mijuanlo)
+<b>Thanks to</b> [Lliurex Team](https://portal.edu.gva.es/lliurex/va/) and [mijuanlo](https://github.com/lliurex/docker-starboard)
 
 <b>Gracias</b> al equipo de Lliurex Team, basé mi dockerfile en el suyo y usé sus archivos.
 
