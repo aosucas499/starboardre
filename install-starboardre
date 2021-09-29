@@ -96,13 +96,17 @@ if [[ $DESKTOP = ubuntu:GNOME || $DESKTOP = ubuntu || $DESKTOP = GNOME || $DESKT
 		sleep 4
 		sudo apt-get install git -y
 		sudo apt-get install dkms -y
-		git clone https://github.com/aosucas499/starboard-lsadrv
-		sudo cp -r starboard-lsadrv /home/$USER
-		cd /home/$USER/starboard-lsadrv
-		chmod +x install
-		./install
+		#git clone https://github.com/aosucas499/starboard-lsadrv
+		#sudo cp -r starboard-lsadrv /home/$USER
+		#cd /home/$USER/starboard-lsadrv
+		#chmod +x install
+		#./install
+		#cd ..
+		#sudo rm -r starboard-lsadrv
+		git clone https://github.com/aosucas499/starboard
+		sudo dpkg -i debs/starboard-modules_0.2.1_all.deb
 		cd ..
-		sudo rm -r starboard-lsadrv
+		sudo rm -r starboard
 	
 	elif [[ $BASED = bionic ]]
 	then
@@ -114,13 +118,17 @@ if [[ $DESKTOP = ubuntu:GNOME || $DESKTOP = ubuntu || $DESKTOP = GNOME || $DESKT
 		sleep 4
 		sudo apt-get install git -y
 		sudo apt-get install dkms -y
-		git clone https://github.com/aosucas499/starboard-lsadrv
-		sudo cp -r starboard-lsadrv /home/$USER
-		cd /home/$USER/starboard-lsadrv
-		chmod +x install
-		./install
+		#git clone https://github.com/aosucas499/starboard-lsadrv
+		#sudo cp -r starboard-lsadrv /home/$USER
+		#cd /home/$USER/starboard-lsadrv
+		#chmod +x install
+		#./install
+		#cd ..
+		#sudo rm -r starboard-lsadrv
+		git clone https://github.com/aosucas499/starboard
+		sudo dpkg -i debs/starboard-modules_0.2.1_all.deb
 		cd ..
-		sudo rm -r starboard-lsadrv
+		sudo rm -r starboard
 	
 	else
 		echo ""
