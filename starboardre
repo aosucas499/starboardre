@@ -34,7 +34,7 @@ image_name=aosucas499/starboard:0.1
 sudo docker stop testing starboard && sudo docker rm testing 
 
 # Cargamos el módulo táctil de la pizarra
-modprobe lsadrv
+#modprobe lsadrv
 
 # Lanzamos el contenedor creándolo si no existe.
 
