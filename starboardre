@@ -37,7 +37,7 @@ docker stop starboard
 #&& sudo docker rm starboard
 
 # Cargamos el módulo táctil de la pizarra
-#modprobe lsadrv
+modprobe lsadrv
 
 # Lanzamos el contenedor creándolo si no existe.
 
