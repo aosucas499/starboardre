@@ -177,7 +177,7 @@ if [[ $DESKTOP = ubuntu:GNOME || $DESKTOP = ubuntu || $DESKTOP = GNOME || $DESKT
 	echo ""
 	echo -e "${AZUL}Downloading the docker image with the board drivers...${NORMAL}"
 	echo ""
-	sudo docker pull aosucas499/starboard:0.1
+	sudo docker pull lliurex/lliurex-starboard:latest
 
 # Hacer la aplicación iniciable en cada reinicio y usable para cualquier usuario sin "sudo"
 #

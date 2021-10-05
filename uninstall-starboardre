@@ -22,14 +22,19 @@ sudo docker stop starboard testing
 
 sudo docker rm starboard testing
 
-#sudo docker rmi aosucas499/starboard:0.1
+sudo docker rmi aosucas499/starboard:0.1
 
 sudo docker rmi aosucas499/starboard
+
+sudo docker rmi lliurex/lliurex-starboard:latest
 
 sudo dkms remove starboard-lsadrv/1.0 --all
 
 sudo rm /etc/apt/sources.list.d/docker.list
 
+sudo apt-get purge --remove starboard-modules
+
 #sudo delgroup docker
 
 #sudo apt purge --remove docker-ce docker-ce-cli containerd.io -y
+
