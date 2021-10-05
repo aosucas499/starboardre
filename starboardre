@@ -46,7 +46,7 @@ if docker ps -a --format '{{.Names}}' | grep -Eq "^${container_name}\$"; then
 
 else
 
-	docker run -it --privileged --net=host -e DISPLAY="$DISPLAY" --volume="/run/dbus/system_bus_socket:/run/dbus/system_bus_socket" --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" -v /dev:/dev -e USER=$SUDO_USER -e GROUP=$SUDO_USER -e UID=$SUDO_UID -e GID=$SUDO_GID --user=$(id -u):$(id -g) --volume="$STORAGE_FOLDER:/root/lliurex-starboard-storage:rw" --workdir=/home/$SUDO_USER --name ${container_name} ${image_name} sudo notify-send "$USER"
+	docker run -it --privileged --net=host -e DISPLAY="$DISPLAY" --volume="/run/dbus/system_bus_socket:/run/dbus/system_bus_socket" --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" -v /dev:/dev -e USER=$SUDO_USER -e GROUP=$SUDO_USER -e UID=$SUDO_UID -e GID=$SUDO_GID --user=$(id -u):$(id -g) --volume="$STORAGE_FOLDER:/root/lliurex-starboard-storage:rw" --workdir=/home/$SUDO_USER --name ${container_name} ${image_name}
 
 fi
 
