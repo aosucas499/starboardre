@@ -33,7 +33,7 @@ else
     mkdir $CONFIG_FOLDER
 fi
 
-sudo docker stop starboard && sudo docker rm starboard
+#docker stop starboard && sudo docker rm starboard
 
 # Cargamos el módulo táctil de la pizarra
 #modprobe lsadrv
