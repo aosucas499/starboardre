@@ -22,6 +22,7 @@ if [ -d "$STORAGE_FOLDER" ]; then
 else
     echo "Creando carpeta $STORAGE_FOLDER"
     mkdir $STORAGE_FOLDER
+    chown -R $SUDO_USER:$SUDO_USER $STORAGE_FOLDER
 fi
 
 
