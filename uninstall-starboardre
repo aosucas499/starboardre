@@ -22,7 +22,11 @@ sudo docker stop starboard testing
 
 sudo docker rm starboard testing
 
-#sudo docker rmi aosucas499/starboard:0.1
+sudo docker rmi aosucas499/starboard:0.1
+
+sudo docker rmi aosucas499/starboard:0.2
+
+sudo docker rmi lliurex/lliurex-starboard:latest
 
 sudo docker rmi aosucas499/starboard
 
