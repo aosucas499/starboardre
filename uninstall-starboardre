@@ -32,6 +32,8 @@ sudo docker rmi aosucas499/starboard
 
 sudo dkms remove starboard-lsadrv/1.0 --all
 
+sudo apt-get purge --remove starboard-modules -y
+
 sudo rm /etc/apt/sources.list.d/docker.list
 
 #sudo delgroup docker
