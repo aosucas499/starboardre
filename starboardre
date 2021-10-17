@@ -9,7 +9,7 @@ xhost +local:root
 container_name=starboard
 
 #variable nombre imagen
-image_name=aosucas499/starboard:0.1
+image_name=aosucas499/starboard:0.2
 
 #variable carpeta configuración para compartir con el contenedor
 #STORAGE_FOLDER=/home/$USER/STARBOARD
