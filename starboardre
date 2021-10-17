@@ -12,8 +12,8 @@ container_name=starboard
 image_name=aosucas499/starboard:0.2
 
 #variable carpeta configuración para compartir con el contenedor
-#STORAGE_FOLDER=/home/$SUDO_USER/STARBOARD
-#CONFIG_FOLDER=~/home/$SUDO_USER/STARBOARD-config
+STORAGE_FOLDER=/home/$SUDO_USER/STARBOARD
+CONFIG_FOLDER=~/home/$SUDO_USER/STARBOARD-config
 
 #rm -r $STORAGE_FOLDER
 
